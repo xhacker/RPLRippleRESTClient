@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A419A18191C300400868E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A419A17191C300400868E1A /* Foundation.framework */; };
+		1A419A1B191C300400868E1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A419A1A191C300400868E1A /* main.m */; };
+		1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */; };
+		AC1E05983A094899B481E5C7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904CB4C5440A4B4EA1BC350F /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A419A12191C300400868E1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EE0B9BE443E4473A309453B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1A419A14191C300400868E1A /* RPLRippleRESTClientDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPLRippleRESTClientDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A419A17191C300400868E1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A419A1A191C300400868E1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A419A1D191C300400868E1A /* RPLRippleRESTClientDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPLRippleRESTClientDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1A726D5D191C365900650ADC /* RPLRippleRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLRippleRESTClient.h; path = RPLRippleRESTClient/RPLRippleRESTClient.h; sourceTree = SOURCE_ROOT; };
+		1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLRippleRESTClient.m; path = RPLRippleRESTClient/RPLRippleRESTClient.m; sourceTree = SOURCE_ROOT; };
+		904CB4C5440A4B4EA1BC350F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A419A11191C300400868E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A419A18191C300400868E1A /* Foundation.framework in Frameworks */,
+				AC1E05983A094899B481E5C7 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A419A0B191C300400868E1A = {
+			isa = PBXGroup;
+			children = (
+				1A419A19191C300400868E1A /* RPLRippleRESTClientDemo */,
+				1A419A16191C300400868E1A /* Frameworks */,
+				1A419A15191C300400868E1A /* Products */,
+				0EE0B9BE443E4473A309453B /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		1A419A15191C300400868E1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A419A14191C300400868E1A /* RPLRippleRESTClientDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A419A16191C300400868E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A419A17191C300400868E1A /* Foundation.framework */,
+				904CB4C5440A4B4EA1BC350F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A419A19191C300400868E1A /* RPLRippleRESTClientDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1A419A1A191C300400868E1A /* main.m */,
+				1A726D5D191C365900650ADC /* RPLRippleRESTClient.h */,
+				1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */,
+				1A419A1C191C300400868E1A /* Supporting Files */,
+			);
+			path = RPLRippleRESTClientDemo;
+			sourceTree = "<group>";
+		};
+		1A419A1C191C300400868E1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A419A1D191C300400868E1A /* RPLRippleRESTClientDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A419A13191C300400868E1A /* RPLRippleRESTClientDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A419A22191C300400868E1A /* Build configuration list for PBXNativeTarget "RPLRippleRESTClientDemo" */;
+			buildPhases = (
+				022D35972DE0454ABDFF9C84 /* Check Pods Manifest.lock */,
+				1A419A10191C300400868E1A /* Sources */,
+				1A419A11191C300400868E1A /* Frameworks */,
+				1A419A12191C300400868E1A /* CopyFiles */,
+				4B548A920FF8495BA3517F38 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPLRippleRESTClientDemo;
+			productName = RPLRippleRESTClientDemo;
+			productReference = 1A419A14191C300400868E1A /* RPLRippleRESTClientDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A419A0C191C300400868E1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Xhacker;
+			};
+			buildConfigurationList = 1A419A0F191C300400868E1A /* Build configuration list for PBXProject "RPLRippleRESTClientDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A419A0B191C300400868E1A;
+			productRefGroup = 1A419A15191C300400868E1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A419A13191C300400868E1A /* RPLRippleRESTClientDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022D35972DE0454ABDFF9C84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B548A920FF8495BA3517F38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A419A10191C300400868E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A419A1B191C300400868E1A /* main.m in Sources */,
+				1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A419A20191C300400868E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A419A21191C300400868E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A419A23191C300400868E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE0B9BE443E4473A309453B /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPLRippleRESTClientDemo/RPLRippleRESTClientDemo-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A419A24191C300400868E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE0B9BE443E4473A309453B /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPLRippleRESTClientDemo/RPLRippleRESTClientDemo-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A419A0F191C300400868E1A /* Build configuration list for PBXProject "RPLRippleRESTClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A419A20191C300400868E1A /* Debug */,
+				1A419A21191C300400868E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A419A22191C300400868E1A /* Build configuration list for PBXNativeTarget "RPLRippleRESTClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A419A23191C300400868E1A /* Debug */,
+				1A419A24191C300400868E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A419A0C191C300400868E1A /* Project object */;
+}
