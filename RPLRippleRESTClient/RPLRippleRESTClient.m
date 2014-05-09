@@ -59,9 +59,22 @@
                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *balances = [@[] mutableCopy];
         for (NSDictionary *balance in responseObject[@"balances"]) {
-            [balances addObject:[RPLBalance modelWithDictionary:balance error:nil]];
+            [balances addObject:[MTLJSONAdapter modelOfClass:RPLBalance.class fromJSONDictionary:balance error:nil]];
         }
         success(balances);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failure(error);
+    }];
+}
+
+- (void)requestSettingsWithAddress:(NSString *)address
+                           success:(void (^)(RPLSettings *))success
+                           failure:(void (^)(NSError *))failure
+{
+    [self.requestManager GET:[NSString stringWithFormat:@"/v1/accounts/%@/settings", address]
+                  parameters:nil
+                     success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        success([MTLJSONAdapter modelOfClass:RPLSettings.class fromJSONDictionary:responseObject[@"settings"] error:nil]);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         failure(error);
     }];

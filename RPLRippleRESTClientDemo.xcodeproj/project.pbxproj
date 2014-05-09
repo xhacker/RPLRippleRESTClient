@@ -11,6 +11,7 @@
 		1A419A1B191C300400868E1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A419A1A191C300400868E1A /* main.m */; };
 		1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */; };
 		1A726D62191C4B8600650ADC /* RPLBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A726D61191C4B8600650ADC /* RPLBalance.m */; };
+		1A913D4D191D821500D52CC7 /* RPLSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A913D4C191D821500D52CC7 /* RPLSettings.m */; };
 		AC1E05983A094899B481E5C7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904CB4C5440A4B4EA1BC350F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLRippleRESTClient.m; path = RPLRippleRESTClient/RPLRippleRESTClient.m; sourceTree = SOURCE_ROOT; };
 		1A726D60191C4B8600650ADC /* RPLBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLBalance.h; path = RPLRippleRESTClient/RPLBalance.h; sourceTree = SOURCE_ROOT; };
 		1A726D61191C4B8600650ADC /* RPLBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLBalance.m; path = RPLRippleRESTClient/RPLBalance.m; sourceTree = SOURCE_ROOT; };
+		1A913D4B191D821500D52CC7 /* RPLSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLSettings.h; path = RPLRippleRESTClient/RPLSettings.h; sourceTree = SOURCE_ROOT; };
+		1A913D4C191D821500D52CC7 /* RPLSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLSettings.m; path = RPLRippleRESTClient/RPLSettings.m; sourceTree = SOURCE_ROOT; };
 		904CB4C5440A4B4EA1BC350F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +90,8 @@
 				1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */,
 				1A726D60191C4B8600650ADC /* RPLBalance.h */,
 				1A726D61191C4B8600650ADC /* RPLBalance.m */,
+				1A913D4B191D821500D52CC7 /* RPLSettings.h */,
+				1A913D4C191D821500D52CC7 /* RPLSettings.m */,
 				1A419A1C191C300400868E1A /* Supporting Files */,
 			);
 			path = RPLRippleRESTClientDemo;
@@ -189,6 +194,7 @@
 				1A726D62191C4B8600650ADC /* RPLBalance.m in Sources */,
 				1A419A1B191C300400868E1A /* main.m in Sources */,
 				1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */,
+				1A913D4D191D821500D52CC7 /* RPLSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

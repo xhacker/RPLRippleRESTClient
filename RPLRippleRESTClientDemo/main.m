@@ -24,6 +24,12 @@ int main(int argc, const char * argv[])
             ;
         }];
 
+        [client requestSettingsWithAddress:@"rEeDuRzo4wN2mhLHa8sJF7aYqQUxbag6Bx" success:^(RPLSettings *settings) {
+            NSLog(@"%@", settings);
+        } failure:^(NSError *error) {
+            ;
+        }];
+
         NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
         [runLoop run];
     }
