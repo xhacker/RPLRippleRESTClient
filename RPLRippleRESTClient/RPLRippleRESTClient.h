@@ -17,8 +17,19 @@
 - (instancetype)initWithURL:(NSURL *)url;
 + (instancetype)clientWithURL:(NSURL *)url;
 
-- (void)requestBalances:(NSString *)address
-                success:(void (^)(NSArray *))success
-                failure:(void (^)(NSError *))failure;
+/**
+ *  Get Balances
+ *
+ *  @param address      Address of account
+ *  @param currency     The balance’s currency, empty string to get all
+ *  @param counterparty Counterparty (issuer) of balance, empty string to get all
+ *  @param success      Success callback
+ *  @param failure      Failure callback
+ */
+- (void)requestBalancesWithAddress:(NSString *)address
+                          currency:(NSString *)currency
+                      counterparty:(NSString *)counterparty
+                           success:(void (^)(NSArray *))success
+                           failure:(void (^)(NSError *))failure;
 
 @end

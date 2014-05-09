@@ -45,11 +45,18 @@
     self.requestManager.responseSerializer = [AFJSONResponseSerializer serializer];
 }
 
-- (void)requestBalances:(NSString *)address
-                success:(void (^)(NSArray *))success
-                failure:(void (^)(NSError *))failure
+- (void)requestBalancesWithAddress:(NSString *)address
+                          currency:(NSString *)currency
+                      counterparty:(NSString *)counterparty
+                           success:(void (^)(NSArray *))success
+                           failure:(void (^)(NSError *))failure;
 {
-    [self.requestManager GET:[NSString stringWithFormat:@"/v1/accounts/%@/balances", address] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSAssert(currency, @"currency shouldn't be nil");
+    NSAssert(counterparty, @"counterparty shouldn't be nil");
+    
+    [self.requestManager GET:[NSString stringWithFormat:@"/v1/accounts/%@/balances", address]
+                  parameters:@{@"currency": currency, @"counterparty": counterparty}
+                     success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *balances = [@[] mutableCopy];
         for (NSDictionary *balance in responseObject[@"balances"]) {
             [balances addObject:[RPLBalance modelWithDictionary:balance error:nil]];
