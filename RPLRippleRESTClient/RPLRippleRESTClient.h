@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPLBalance.h"
 
 @interface RPLRippleRESTClient : NSObject
+
+@property (nonatomic) NSURL *serverURL;
+
+- (instancetype)init;
+- (instancetype)initWithURL:(NSURL *)url;
++ (instancetype)clientWithURL:(NSURL *)url;
+
+- (void)requestBalances:(NSString *)address
+                success:(void (^)(NSArray *))success
+                failure:(void (^)(NSError *))failure;
 
 @end

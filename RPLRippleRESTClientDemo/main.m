@@ -7,15 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPLRippleRESTClient.h"
 
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        RPLRippleRESTClient *client = [RPLRippleRESTClient clientWithURL:[NSURL URLWithString:@"http://localhost:5990"]];
+        NSLog(@"Client with URL %@ created.", client.serverURL);
+
+        [client requestBalances:@"rEeDuRzo4wN2mhLHa8sJF7aYqQUxbag6Bx" success:^(NSArray *balances) {
+            NSLog(@"%@", balances);
+        } failure:^(NSError *error) {
+            ;
+        }];
+
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        [runLoop run];
     }
     return 0;
 }

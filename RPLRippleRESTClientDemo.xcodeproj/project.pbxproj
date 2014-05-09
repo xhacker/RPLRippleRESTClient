@@ -10,6 +10,7 @@
 		1A419A18191C300400868E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A419A17191C300400868E1A /* Foundation.framework */; };
 		1A419A1B191C300400868E1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A419A1A191C300400868E1A /* main.m */; };
 		1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */; };
+		1A726D62191C4B8600650ADC /* RPLBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A726D61191C4B8600650ADC /* RPLBalance.m */; };
 		AC1E05983A094899B481E5C7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904CB4C5440A4B4EA1BC350F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		1A419A1D191C300400868E1A /* RPLRippleRESTClientDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPLRippleRESTClientDemo-Prefix.pch"; sourceTree = "<group>"; };
 		1A726D5D191C365900650ADC /* RPLRippleRESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLRippleRESTClient.h; path = RPLRippleRESTClient/RPLRippleRESTClient.h; sourceTree = SOURCE_ROOT; };
 		1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLRippleRESTClient.m; path = RPLRippleRESTClient/RPLRippleRESTClient.m; sourceTree = SOURCE_ROOT; };
+		1A726D60191C4B8600650ADC /* RPLBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPLBalance.h; path = RPLRippleRESTClient/RPLBalance.h; sourceTree = SOURCE_ROOT; };
+		1A726D61191C4B8600650ADC /* RPLBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPLBalance.m; path = RPLRippleRESTClient/RPLBalance.m; sourceTree = SOURCE_ROOT; };
 		904CB4C5440A4B4EA1BC350F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,8 @@
 				1A419A1A191C300400868E1A /* main.m */,
 				1A726D5D191C365900650ADC /* RPLRippleRESTClient.h */,
 				1A726D5E191C365900650ADC /* RPLRippleRESTClient.m */,
+				1A726D60191C4B8600650ADC /* RPLBalance.h */,
+				1A726D61191C4B8600650ADC /* RPLBalance.m */,
 				1A419A1C191C300400868E1A /* Supporting Files */,
 			);
 			path = RPLRippleRESTClientDemo;
@@ -181,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A726D62191C4B8600650ADC /* RPLBalance.m in Sources */,
 				1A419A1B191C300400868E1A /* main.m in Sources */,
 				1A726D5F191C365900650ADC /* RPLRippleRESTClient.m in Sources */,
 			);
