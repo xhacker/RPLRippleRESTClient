@@ -80,4 +80,25 @@
     }];
 }
 
+- (void)changeSettings:(NSDictionary *)settings
+           withAddress:(NSString *)address
+                secret:(NSString *)secret
+               success:(void (^)())success
+               failure:(void (^)(NSString *))failure
+{
+    NSDictionary *parameters = @{@"secret": secret, @"settings": settings};
+    [self.requestManager POST:[NSString stringWithFormat:@"/v1/accounts/%@/settings", address]
+                   parameters:parameters
+                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ([responseObject[@"success"] boolValue]) {
+            success();
+        }
+        else {
+            failure(responseObject[@"error"]);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failure(error.userInfo[NSLocalizedDescriptionKey]);
+    }];
+}
+
 @end

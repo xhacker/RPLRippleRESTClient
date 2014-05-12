@@ -44,4 +44,19 @@
                            success:(void (^)(RPLSettings *))success
                            failure:(void (^)(NSError *))failure;
 
+/**
+ *  Change Settings
+ *
+ *  @param settings Settings dictionary, refer to https://github.com/ripple/ripple-rest/blob/develop/docs/api-reference.md#settings
+ *  @param address  Address of the account
+ *  @param secret   Account secret
+ *  @param success  Success callback
+ *  @param failure  Failure callback, returns the error string
+ */
+- (void)changeSettings:(NSDictionary *)settings
+           withAddress:(NSString *)address
+                secret:(NSString *)secret
+               success:(void (^)())success
+               failure:(void (^)(NSString *))failure;
+
 @end

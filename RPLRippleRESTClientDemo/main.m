@@ -21,13 +21,20 @@ int main(int argc, const char * argv[])
                                    success:^(NSArray *balances) {
             NSLog(@"%@", balances);
         } failure:^(NSError *error) {
-            ;
+            NSLog(@"%@", @"Failed.");
         }];
 
         [client requestSettingsWithAddress:@"rEeDuRzo4wN2mhLHa8sJF7aYqQUxbag6Bx" success:^(RPLSettings *settings) {
             NSLog(@"%@", settings);
         } failure:^(NSError *error) {
-            ;
+            NSLog(@"%@", @"Failed.");
+        }];
+
+        NSDictionary *settings = @{@"require_destination_tag": @YES};
+        [client changeSettings:settings withAddress:@"rEeDuRzo4wN2mhLHa8sJF7aYqQUxbag6Bx" secret:@"shzx3CdH7h4DnwQQBvZcwbz8N9pYS" success:^{
+            NSLog(@"%@", @"Settings changed.");
+        } failure:^(NSString *error) {
+            NSLog(@"%@: %@", @"Change settings failed", error);
         }];
 
         NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
